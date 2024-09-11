@@ -1,0 +1,154 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: bitter;
+}
+
+.head{
+	height: 100vh;
+	width: 100%;
+	background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0.6)),url(../images/b.jpeg);
+	background-size: cover;
+	background-position: center;
+}
+.nav{
+	width: 100%;
+	background-color: black;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-bottom: 10px;
+	padding-top: 20px;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+.logo{
+	color: white;
+	font-size: 30px;
+	cursor: pointer;
+}
+.nav ul li{
+	list-style-type: none;
+	display: inline-block;
+	padding: 10px 20px;
+}
+.nav ul li a{
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 17px;
+}
+.nav a:hover{
+	color: red;
+	transition: .3s;
+}
+button{
+	border: 2px solid red;	
+	background: transparent;
+	padding: 10px 30px;
+	border-radius: 30px;
+	font-weight: bold;
+	font-size: 18px;
+	transition: .4s;
+	color: red;
+	width: 200px;
+	text-align: right;	
+}
+button:hover{
+	cursor: pointer;
+	background: white;
+	color: black;
+}
+.header h1{
+	padding-top: 250px;
+	width: 100%;
+	text-align: center;
+	color: whitesmoke;
+	font-size: 50px;
+	padding-right: 55%;
+}
+
+
+
+.feed{
+	font-weight: 500px;
+	font-size: 25px;
+}
+
+
+.con{
+	font-size: 40px;
+	text-align: center;
+	font-weight: 500;
+	margin-top: 20px;
+}
+
+.contact{
+	height: 100%;
+	width: 50%;
+	float: left;
+}
+
+.form{
+	height: 550px;
+	width: 70%;
+	margin-top: 50px;
+	margin-left: 200px;
+	border: 1px solid black;
+}
+
+.img{
+	height: 100%;
+	width: 100%;
+}
+
+.for{
+	height: 100%;
+	width: 50%;
+	float: right;
+}
+
+.gen{
+	margin-left: 10px;
+}
+
+.inp{
+	width: 80%;
+	height: 25px;
+	margin-left: 10px;
+}
+
+.feed{
+	margin-left: 10px;
+}
+
+.sub{
+	margin-left: 10px;
+}
+
+
+
+.conatainer3{
+	width: 100%;
+	padding-top: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.footer{
+	width: 100%;
+	background-color: black;
+	display: grid;
+	text-align: center;
+	justify-content: space-between;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	padding-left: 45%;
+	color: white;
+}
+.icon img{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+}

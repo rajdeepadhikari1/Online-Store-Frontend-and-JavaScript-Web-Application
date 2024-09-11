@@ -1,0 +1,310 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: bitter;
+}
+.head{
+	height: 100vh;
+	width: 100%;
+	background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0.6)),url(../images/b.jpeg);
+	background-size: cover;
+	background-position: center;
+}
+.nav{
+	width: 100%;
+	background-color: black;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-bottom: 10px;
+	padding-top: 20px;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+.logo{
+	color: white;
+	font-size: 30px;
+	cursor: pointer;
+}
+.nav ul li{
+	list-style-type: none;
+	display: inline-block;
+	padding: 10px 20px;
+}
+.nav ul li a{
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 17px;
+}
+.nav a:hover{
+	color: red;
+	transition: .3s;
+}
+button{
+	border: 2px solid red;	
+	background: transparent;
+	padding: 10px 30px;
+	border-radius: 30px;
+	font-weight: bold;
+	font-size: 18px;
+	transition: .4s;
+	color: red;
+	width: 200px;
+	text-align: right;	
+}
+button:hover{
+	cursor: pointer;
+	background: white;
+	color: black;
+}
+.content{
+	width: 100%;
+	position: absolute;
+	top: 40%;
+	transform: translateY(-60%);
+	text-align: center;
+	padding-right: 53%;
+	color: white;
+	padding-top: 15%;
+}
+.content button{
+	width: 150px;
+	padding: 10px 0;
+	text-align: center;
+	background:transparent;
+	margin: 10px 10px;
+	border-radius: 25px;
+	font-weight: bold;
+	border: 2px solid darkred;
+	color: white;
+}
+.content button:hover{
+	background: darkred;
+	cursor: pointer;
+	transform: scale(1.2);
+}
+
+.container .buy button{
+	background: #ffD700;
+	text-align: center;
+	padding: 6px 3px;
+	width: 130px;
+
+}
+.container{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.header{
+	font-size: 20px;
+	padding-top: 20px;
+	width: 100%;
+	text-align: center;
+	
+}
+.header h1{
+	width: 100%;
+	text-align: center;
+	color: navy;
+}
+.header span{
+	background: green;
+	color: white;
+	display: inline-block;
+	padding: 5px 20px;
+	clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%,7% 50%, 0% 0%);
+}
+.products{
+	padding-top: 50px;
+	width: 100%;
+	height: 70%;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap:70px;
+}
+.product{
+	position: relative;	
+	background-color: white;
+	width: 320px;
+	heigth: 100%;
+	box-shadow: 0 5px 20px rgba(6, 159, 43, 0.77);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 10px 10px 30px;
+	border-radius: 10px;
+	transition: .3s;
+}
+.product:hover{
+	transform: translateY(-15px);
+	box-shadow: 0 5px 10px rgba(1, 124, 31, 0.77);
+}
+.image{
+	width: fit-content;
+	height: fit-content;
+	display: grid;
+	place-items: center;
+}
+.image img{
+	width: 300px;
+	height: 300px;
+	align-content: center;
+}
+.nameprice h2{
+	text-decoration: none;
+}
+.nameprice span{
+	text-decoration: none;
+	font-size: 17px;
+	color: goldenrod;
+	font-weight: bold;
+} 
+.buy button{
+	position: absolute;
+	right: 7px;
+	bottom: 10px;
+}
+.buy button:hover{
+	color: white;
+	transform: scale(1.1);	
+}
+.off-title{
+	font-weight: 300;
+	font-size: 1rem;
+	text-transform: uppercase;
+}
+.off-title{
+	background: hotpink;
+	color: white;
+	display: inline-block;
+	padding: 0.5rem;
+	position: absolute;
+	top: 0;
+	left: 1px;
+	writing-mode: vertical-lr;
+	transform: rotate(180deg);
+}
+.off-title1{
+	font-weight: 300;
+	font-size: 1rem;
+	text-transform: uppercase;
+}
+.off .off-title1{
+	background: darkblue;
+	color: white;
+	display: inline-flex;
+	padding: 0.5rem;
+	position: absolute;
+	top: 0;
+	left: 1px;
+	writing-mode: vertical-lr;
+	transform: rotate(180deg);
+}
+.container2{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.header2{
+	font-size: 20px;
+	padding-top: 50px;
+	width: 100%;
+	text-align: center;
+	color: navy;
+}
+.header2 span{
+	background: red;
+	color: white;
+	display: inline-block;
+	padding: 5px 15px;
+	clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%,7% 50%, 0% 0%);
+}
+.Features{
+	padding-top: 30px;
+	width: 100%;
+	height: 70%;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap:70px;
+}
+.feature{
+	position: relative;	
+	background-color: white;
+	width: 320px;
+	heigth: 200px;
+	box-shadow: 0 7px 12px red;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 10px 10px 30px;
+	border-radius: 10px;
+	transition: .3s;
+}
+.feature:hover{
+	transform: translateY(-15px);
+	box-shadow: 0 5px 10px darkred;
+}
+.image2{
+	width: fit-content;
+	height: fit-content;
+	display: grid;
+	place-items: center;
+}
+.image2 img{
+	width: 275px;
+	align-items: center;
+}
+.facility h1{
+	font-size: 25px;
+	text-align: center;
+}
+.facility p{
+	margin-top: 6px;
+	line-height: 17px;
+	font-size: 11px;
+	margin-bottom: 20px;
+}
+.container2 .btn button{
+	background: #ffD700;
+	text-align: center;
+	padding: 6px 3px;
+	width: 130px;
+}
+.btn button{
+	position: absolute;
+	left: 100px;
+	right: 0;
+	bottom: 6px;
+}
+.btn button:hover{
+	color: white;
+	transform: scale(1.1);	
+}
+.conatainer3{
+	width: 100%;
+	padding-top: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.footer{
+	width: 100%;
+	background-color: black;
+	display: grid;
+	text-align: center;
+	justify-content: space-between;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	padding-left: 45%;
+	color: white;
+}
+.icon img{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+}

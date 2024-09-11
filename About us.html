@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>About Us</title>
+  <style>
+  /* General styles */
+body {
+  background-color: black;
+  color: white;
+  font-family: bitter;
+  font-size: 16px;
+  background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0.6)),url(../images/b.jpeg);
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  height: 100vh;
+
+}
+
+
+/* Styles for the header */
+header {
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  color: darkred;
+
+}
+
+/* Styles for the "About Us" heading */
+h1 {
+  font-size: 50px;
+  color: black;
+  margin: 20;
+  font-weight: bold;
+}
+
+/* Styles for the people's names */
+.name {
+  font-size: 30px;
+  font-weight: bold;
+  color: blacks;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+/* Styles for the people's portfolios */
+.portfolio {
+  display: none;
+  padding: 20px;
+  background-color: #fff;
+  border-top: 1px solid #ddd;
+}
+
+/* Styles for the active portfolio */
+.active {
+  display: block;
+}
+
+   .blackbox {
+  background-color: teal;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+ section {
+    margin: 40px 0; 
+}
+}
+#vision-button {
+  font-size: 40px;
+  padding: 10px 20px;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f2f2f2;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.logo span {
+  color: red;
+}
+
+.nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.nav{
+  padding-top: 10px;
+  background-color: black;
+}
+
+.nav li {
+  margin: 0 30px;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+}
+.nav a:hover{
+  color: red;
+}
+h1{
+  color: white;
+}
+</style>
+</head>
+<body>
+  <div class="nav">
+      <h2 class="logo">Bonsai<span style="color:red;"> Store</span></h2>
+      <ul>
+       <li><a href="../home.html">Home</a></li>
+        <li><a href="product.html">Product</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="#">AboutUs</a></li>
+        <li><a href="contact us.html">ContactUs</a></li>
+      </ul>
+    </div>
+  <h1>About Us</h1>
+  <section id="team">
+  <button id="team-button" onclick="showTeam()">Meet Our Team</button>
+  <div id="team-content" style="display: none;">
+    <h2>Meet Our Team</h2>
+    <ul>
+      <li id="person1" onclick="showPortfolio(1)">Yechu Shrestha</li>
+      <li id="person2" onclick="showPortfolio(2)">Rajdeep Adhikari</li>
+      <li id="person3" onclick="showPortfolio(3)">Rijan Basnet</li>
+      <li id="person4" onclick="showPortfolio(4)">Prashant Bhandari</li>
+    </ul>
+  </div>
+</section>
+<div id="portfolio1" class="portfolio" style="display: none;">
+  <div class="blackbox">
+    <h2>Yechu Shrestha's Portfolio</h2>
+    <img src="../images/yechu.png" alt="Yechu Shrestha's profile picture">
+    <p>Name: Yechu Shrestha</p>
+    <p>Email: yechushrestha18@amail.com</p>
+    <p>Phone Number: 9813599831</p>
+    <p>Summary: Highly motivated and hardworking IT (Computing) student with passion for web technologies. Familiar with HTML, CSS and other basic programming concepts and languages such as java. Strong written and verbal communications skills, ability to work well in a team and a quick learner.</p>
+    <p>Education:</p>
+    <ul>
+      <li>Bachelor of Science Honoring Computing. Islington College (Expected graduation date: May 2025)</li>
+      <li>+2 in Science major with Biology. Xavier Academy (November 2020)</li>
+    </ul>
+    <p>Volunteering Experience:</p>
+    <ul>
+      <li>Served as a Club Service Director in Rotaract Club Of Charumati in the Rota year 2019-2020.</li>
+      <li>Also served as a general member for the year 2021.</li>
+    </ul>
+    <p>Skills:</p>
+    <ul>
+      <li>CSS</li>
+      <li>Strong written and verbal communications</li>
+      <li>Good at logic and problem solving</li>
+      <li>Ability to work well in a team</li>
+      <li>Good leadership skills</li>
+    </ul>
+  </div>
+</div>
+  <div id="portfolio2" class="portfolio" style="display: none;">
+    <div class="blackbox">
+   <h2>Rajdeep Adhikari's portfolio</h2>
+   <img src="../images/rajdeep.png" alt="Rajdeep Adhikari's profile picture">
+   <p>Name: Rajdeep Adhikari
+  <p>Email: rajdeepadhikari18@gmail.com</p>
+  <p>Phone Number: 9840326230</p>
+  <p>Education: 10+2</p>
+  <p>Summary: Learning and working hard in IT Sector (Computing). Enjoy to create web pages using HTML, CSS and Javascript. Familier with written and verbal communications skills, ability to work in team and a good learner and hardworking student.</p>
+  <p>Education:</p>
+    <ul>
+      <li>Bachelor of Science Honoring Computing. Islington College (Expected graduation date: May 2025)</li>
+      <li>+2 in Science major with Biology. Xavier Academy (November 2021)</li>
+    </ul>
+    <p>Skills:</p>
+    <ul>
+      <li>CSS</li>
+      <li>Strong written and verbal communications</li>
+      <li>Good at logic and problem solving</li>
+      <li>Ability to work well in a team</li>
+      <li>Good leadership skills</li>
+    </ul>
+  </div>
+</div>
+ <div id="portfolio3" class="portfolio" style="display: none;">
+  <div class="blackbox">
+    <h2>Rijan Basnet's Portfolio</h2>
+    <img src="../images/rijan.png" alt="Rijan Basnet's profile picture">
+    <p>Name: Rijan Basnet</p>
+    <p>Email: rijanbasnet18@amail.com</p>
+    <p>Phone Number: 9813555831</p>
+    <p>Summary: Highly motivated and hardworking IT (Computing) student with passion for web technologies. Familiar with HTML, CSS and other basic programming concepts and languages such as java. Strong written and verbal communications skills, ability to work well in a team and a quick learner.</p>
+    <p>Education:</p>
+    <ul>
+      <li>Bachelor of Science Honoring Computing. Islington College (Expected graduation date: May 2025)</li>
+      <li>+2 in Science major with Physics. Reliance Academy (November 2021)</li>
+    </ul>
+    <p>Skills:</p>
+    <ul>
+      <li>CSS</li>
+      <li>Strong written and verbal communications</li>
+      <li>Good at logic and problem solving</li>
+      <li>Ability to work well in a team</li>
+      <li>Good leadership skills</li>
+    </ul>
+  </div>
+  </div>
+  <div id="portfolio4" class="portfolio" style="display: none;">
+    <div class="blackbox">
+   <h2>Prashant Bhandari's Portfolio</h2>
+   <img src="../images/prashant.png" alt="Prashant Bhandari's profile picture">
+    <p>Name: Prashant Bhandari</p>
+    <p>Email: prashantbhandari18@amail.com</p>
+    <p>Phone Number: 9813534831</p>
+    <p>Summary: Highly motivated and hardworking IT (Computing) student with passion for web technologies. Familiar with HTML, CSS and other basic programming concepts and languages such as java. Strong written and verbal communications skills, ability to work well in a team and a quick learner.</p>
+    <p>Education:</p>
+    <ul>
+      <li>Bachelor of Science Honoring Computing. United College (Expected graduation date: May 2025)</li>
+      <li>+2 in Science major with Biology. United Academy (November 2020)</li>
+    </ul>
+    <p>Skills:</p>
+    <ul>
+      <li>CSS</li>
+      <li>Strong written and verbal communications</li>
+      <li>Good at logic and problem solving</li>
+      <li>Ability to work well in a team</li>
+      <li>Good leadership skills</li>
+    </ul>
+  </div>
+  </div>
+  <script>
+function showTeam() {
+  var teamContent = document.getElementById("team-content");
+  if (teamContent.style.display === "none") {
+    teamContent.style.display = "block";
+  } else {
+    teamContent.style.display = "none";
+  }
+}
+function showTeam() {
+  var teamContent = document.getElementById("team-content");
+  if (teamContent.style.display === "none") {
+    teamContent.style.display = "block";
+  } else {
+    teamContent.style.display = "none";
+  }
+}
+
+var currentPortfolio = null;
+
+function showPortfolio(person) {
+  var portfolio1 = document.getElementById("portfolio1");
+  var portfolio2 = document.getElementById("portfolio2");
+  var portfolio3 = document.getElementById("portfolio3");
+  var portfolio4 = document.getElementById("portfolio4");
+
+  if (person === 1) {
+    if (currentPortfolio === 1) {
+      portfolio1.style.display = "none";
+      currentPortfolio = null;
+    } else {
+      portfolio1.style.display = "block";
+      currentPortfolio = 1;
+    }
+  } else if (person === 2) {
+    if (currentPortfolio === 2) {
+      portfolio2.style.display = "none";
+      currentPortfolio = null;
+    } else {
+      portfolio2.style.display = "block";
+      currentPortfolio = 2;
+    }
+  } else if (person === 3) {
+    if (currentPortfolio === 3) {
+      portfolio3.style.display = "none";
+      currentPortfolio = null;
+    } else {
+      portfolio3.style.display = "block";
+      currentPortfolio = 3;
+    }
+  } else if (person === 4) {
+    if (currentPortfolio === 4) {
+      portfolio4.style.display = "none";
+      currentPortfolio = null;
+    } else {
+      portfolio4.style.display = "block";
+      currentPortfolio = 4;
+    }
+  }
+
+  // Close any other open portfolios
+  if (currentPortfolio !== 1) {
+    portfolio1.style.display = "none";
+  }
+  if (currentPortfolio !== 2) {
+    portfolio2.style.display = "none";
+  }
+  if (currentPortfolio !== 3) {
+    portfolio3.style.display = "none";
+  }
+  if (currentPortfolio !== 4) {
+    portfolio4.style.display = "none";
+  }
+}
+
+</script>
+<section id="vision">
+ <button id="vision-button" onclick="showVision()">Our Vision</button>
+<div id="vision-content" style="display: none;">
+  <div class="blackbox">
+  <h2>Our Vision</h2>
+    <p>Our vision is to be the leading online destination for bonsai enthusiasts and hobbyists. We aim to provide a wide range of high-quality bonsai plants, tools and accessories, as well as educational resources to help our customers learn and grow in the art of bonsai cultivation. We strive to make the process of buying and caring for bonsai plants as easy and enjoyable as possible for our customers. Through our commitment to excellent customer service and our passion for bonsai, we hope to bring the beauty and serenity of bonsai into homes and gardens around the world.</p>
+ </div>
+</div>
+ </section>
+<script>
+    function showVision() {
+        var content = document.getElementById("vision-content");
+        if (content.style.display === "none") {
+            content.style.display = "block";
+        } else {
+            content.style.display = "none";
+        }
+    }     
+</script>
+<section id="product-services">
+ <button id="product-services-button" onclick="showContent()">Products and Services</button>
+<div id="product-services-content" style="display: none;">
+  <div class="blackbox">
+  <h2>Products and Services</h2>
+  <p>At Bonsai Ecommerce, we specialize in providing a wide variety of high-quality bonsai plants online. Our online store offers a diverse range of bonsai trees, including traditional favorites such as Japanese maple and juniper, as well as more unique and rare varieties like the Chinese elm and the Fukien tea.</p>
+  <p>We only sell bonsai plants online, if you're looking for other products, please visit our store located in Kamalpokhari, Kathmandu.</p>
+  <p>In addition to our bonsai trees, we also offer a range of bonsai-related products and services to help our customers care for and maintain their plants. These include:</p>
+  <ul>
+    <li>Bonsai tools: We carry a wide range of tools, including wire cutters, concave cutters, and root hooks, to help our customers style and shape their bonsai trees.</li>
+    <li>Bonsai soil and fertilizers: We offer a variety of high-quality soils and fertilizers specifically formulated for bonsai plants, to help ensure that they are getting the right nutrients to thrive.</li>
+    <li>Bonsai books and guides: We have a selection of books and guides on bonsai care and maintenance, which can be a great resource for both beginners and experienced bonsai enthusiasts.</li>
+    <li>Bonsai classes and workshops: For those who are interested in learning more about bonsai and honing their skills, we offer classes and workshops taught by experienced bonsai growers and educators.</li>
+  </ul>
+  <p>At Bonsai Ecommerce, we are dedicated to providing our customers with the highest quality bonsai plants and the best possible service. Our team is passionate about bonsai and has many years of experience in the industry, so we are confident that we can help you find the perfect bonsai tree for your collection.</p>
+</div>
+</div>
+ </section>
+<script>
+    function showContent() {
+        var content = document.getElementById("product-services-content");
+        if (content.style.display === "none") {
+            content.style.display = "block";
+        } else {
+            content.style.display = "none";
+        }
+    }
+</script>
+</body>
+</html>
+

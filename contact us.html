@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../css/c.css">
+	<title>Contact Us</title>
+</head>
+<body>
+	<!...section of navbar and header section...>
+	<div class="head">
+		<div class="nav">
+			<h2 class="logo">Bonsai<span style="color:red;"> Store</span></h2>
+			<ul>
+				<li><a href="../home.html">Home</a></li>
+				<li><a href="product.html">Product</a></li>
+				<li><a href="blog.html">Blog</a></li>
+				<li><a href="research.html">Research</a></li>
+				<li><a href="About us.html">AboutUs</a></li>
+				<li><a href="#">ContactUs</a></li>
+			</ul>
+			<button type="button">Search</button>	
+		</div>
+
+		<!...end of navbar and header section...>
+
+		<!...section for form section...>
+
+		<div class="header">
+			<h1>ContactUs</h1>
+		</div>
+	</div>
+	<div class="form">
+		<div class="contact">
+			<img class="img" src="../Images/contact.jpg">
+		</div>
+
+		<div class="for">
+			<h2 class="feed">Please Provide Us Your Information</h2>
+			<br>
+			<br>
+			<form name="Form" onsubmit="validateForm()">
+				<p>First Name: </p>
+				<input class="inp" type="text" name="firstname">
+				<br>
+				<br>
+				<p>Last Name: </p>
+				<input class="inp" type="text" name="lastname">
+				<br>
+				<br>
+				<p>E-mail: </p>
+				<input class="inp" type="email" name="email">
+				<br>
+				<br>
+				<p>Gender: </p>
+				<input class="gen" type="radio" name="gender" value="male" checked> Male
+				<input type="radio" name="gender" value="female"> Female
+				<br>
+				<br>
+				<p>Feedback: </p>
+				<textarea class="feed" name="feedback" placeholder="Enter your feedback"></textarea>
+				<br>
+				<br>
+				<input class="sub" type="submit" name="send">
+			</form>
+		</div>
+
+		<!...end of form section...>
+
+		<!... footer section...>
+			
+		<div class="conatainer3">
+		<div class="footer">
+			<div class="icon">
+				<a href="https://www.facebook.com/login/" target="blank">
+					<img src="../images/icon2.png">
+				</a>
+				<a href="https://www.instagram.com/accounts/login/" target="blank">
+					<img src="../images/icon1.png">
+				</a>
+				<a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D" target="blank">
+					<img src="../images/icon3.png">
+				</a>
+			</div>
+			<div>
+				<p>Info . Support . Marketing<br>Terms of Use . Privacy Policy<br>copyright 2023BonsaiStore</p>
+			</div>
+		</div>
+	</div>
+
+	<!...end of footer section...>
+
+		<!...javascript section...>
+
+		<script type="text/javascript">
+			function validateForm() {
+			var FirstName = document.forms["Form"]["firstname"].value;
+			var LastName = document.forms["Form"]["lastname"].value;
+			var Feedback = document.forms["Form"]["feedback"].value;
+			var Email = document.forms["Form"]["email"].value;
+
+			if (FirstName == "" || LastName == "" || Feedback == "" || Email == "") {
+			alert("Please Enter The information");
+			} else {
+			alert("Your Feedback Is Sent");
+			}
+	    	}
+		</script>
+
+		<!... end of javascript section...>
+</body>
+</html>
